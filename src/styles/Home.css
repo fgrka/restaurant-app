@@ -1,0 +1,66 @@
+.home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    height: 100vh;
+}
+
+.home-description {
+    text-align: center;
+}
+
+.home-logo-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.home-logo-img {
+    height: 11rem;
+} 
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    /* background-color: var( --col-green); */
+}
+
+.home-btn-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 30rem;
+    gap: 1rem;
+}
+
+.home-btn-signin {
+    grid-column: 1/2;
+}
+
+.home-btn-signup {
+    grid-column: 2/3;
+}
+
+.home-btn-notlogged {
+    grid-column: 1/3;
+}
+
+.home-card-info {
+    display: block;
+    text-align: center;
+}
+
+
+.home-card-info-reg {
+    font-size: 0.8rem;
+}
+
+ 
+  

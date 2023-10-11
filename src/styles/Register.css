@@ -1,0 +1,20 @@
+.register {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    height: 100vh;
+}
+
+.register-title {
+    text-align: center;
+    
+}
+ 
+.register-info {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,7 @@
+.error-info {
+    display: block;
+    font-size: 0.8rem;
+    color: red;
+    padding-left: 1rem;
+    transition: all 1s ease;
+}

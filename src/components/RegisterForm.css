@@ -1,0 +1,20 @@
+.register-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30rem;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.register-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-error-container {
+    height: 2rem;
+    width: 100%;
+}
+    
