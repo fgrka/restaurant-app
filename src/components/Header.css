@@ -1,7 +1,6 @@
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +8,17 @@
     height: 4rem;
     background: white;
     z-index: 999999;
- 
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30rem;
+
 }
 
 .header-arrow {

@@ -9,15 +9,17 @@ function Header(){
     const back = () => navigate("/Home");
     return(
     <div className="header">
-        <div className="header-arrow"> 
-            <ReturnArrow page={back}></ReturnArrow>
-        </div>
-        <div className="header-title">
-            <h2>Menu</h2>
-        </div> 
-        <div className="header-icons">
-            <img className="icon" src={trolley} />
-            <img className="icon" src={user} />
+        <div class="header-container"> 
+            <div className="header-arrow"> 
+                <ReturnArrow page={back}></ReturnArrow>
+            </div>
+            <div className="header-title">
+                <h2>Menu</h2>
+            </div> 
+            <div className="header-icons">
+                <img className="icon" src={trolley} />
+                <img className="icon" src={user} />
+            </div>
         </div>
     </div>
     )
