@@ -2,42 +2,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.menu-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 5rem;
-    background: black;
-}
- 
- 
-.menu-slider-inner {
-    display: flex;
-    flex-direction: row;
-    gap: 0.8rem;
-    cursor: grab;
-}
-
-.menu-slider-img {
-    height: 3rem;
-    width: 3rem;
-    min-width: 3rem;
-    margin: 0.5rem;
-}
-
-.menu-slider-img > img {
     height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 0.2rem;
-    -webkit-user-drag: none;
- 
+    overflow: hidden;
+
 }
 
 .menu-outer {
@@ -45,14 +12,13 @@
     padding-top: 2rem;
     height: 100%;
     background-color: white;
-    border-top-right-radius: 2rem;
-    border-top-left-radius: 2rem;
-    z-index: 999;
 }
 
 .menu-inner {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .menu-title {
@@ -60,3 +26,8 @@
     padding-bottom: 1rem;
 }
  
+.card-container {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}

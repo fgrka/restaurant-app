@@ -1,0 +1,46 @@
+
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    gap: 0.6rem;
+    cursor: grab;
+    height: 8rem;
+    width:fit-content;
+}
+
+
+.slider-img {
+    display: block;
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    margin: 0.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider-img > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    -webkit-user-drag: none; 
+}
+
+.item-txt {
+    margin-top: 0;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    text-align: center;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+
+@media screen and (min-width: 600px) {
+    .slider-inner {
+       margin: 0 auto;
+    }
+}

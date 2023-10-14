@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+    background: white;
+    z-index: 999999;
+ 
+}
+
+.header-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.header-icons, .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 33%;
+    margin-right: 1rem;
+}
+ 
+.icon {
+    display: block;
+    height: 2rem;
+ 
+}
