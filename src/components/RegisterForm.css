@@ -1,20 +1,32 @@
-.register-form-container {
+.register-form-inputs {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 30rem;
     gap: 0.3rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1.6rem;
 }
 
 .register-btn-container {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .register-error-container {
+    position: absolute;
+    bottom: -0.4rem;
     height: 2rem;
     width: 100%;
 }
     
+
+.regiser-password-check > ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0 1rem;
+}

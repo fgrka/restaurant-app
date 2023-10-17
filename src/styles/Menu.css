@@ -2,16 +2,17 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 100%;
     overflow: hidden;
-
+    height: max-content;
+    padding-bottom: 2rem;
 }
 
 .menu-outer {
     margin-top: 3rem;
     padding-top: 2rem;
-    height: 100%;
+   
     background-color: white;
+
 }
 
 .menu-inner {

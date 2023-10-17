@@ -11,16 +11,17 @@ function Slider(props) {
         setWidth(element.current.offsetWidth);
     });
     let constraintLeft;
-    if (window.width < width) {
-        constraintLeft = window.innerWidth - width-50;
+    console.log(window.innerWidth);
+    console.log(width);
+    
+    if (window.innerWidth  < width) {
+        constraintLeft = window.innerWidth - width-65;
     }
     else 
         constraintLeft=0;
-    console.log(constraintLeft)
-
     return(
         <motion.div className="slider">
-            <motion.div drag="x" dragConstraints={{ right: 0, left: constraintLeft}} className="slider-inner" ref={element}>
+            <motion.div drag="x" dragConstraints={{ right: 0, left:constraintLeft}} className="slider-inner" ref={element}>
                 {props.images.map(image => {
                     return (
                         <motion.div className="slider-img">

@@ -9,8 +9,8 @@
 .search-icon {
     height: 2.4rem;
     position: absolute;
-    top:-2.5px;
-    right: 0px;
+    top:2px;
+    right: 4px;
 }
 
 .searchbar-input {
