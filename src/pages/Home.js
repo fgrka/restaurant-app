@@ -14,7 +14,7 @@ function Home() {
         <div className="home">
             <div className="home-description"> <strong>Zaloguj się</strong>, aby otrzymywać personalizowane promocje, <br></br> lub <strong>kontynuuj bez logowania</strong> </div>
             <div className="home-logo-container">
-                <img className="home-logo-img" src={image} alt="food"/>
+                <div className="home-logo-img"  />
             </div>
             <div className="home-card"> 
                 <div className="home-btn-container">

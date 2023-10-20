@@ -1,30 +1,34 @@
 import "../styles/Menu.css"
-import { useEffect, useState } from "react";
-import sliderImages from "../components/SliderImg";
+import { useState } from "react";
+import { products } from "../products";
 import Slider from "../components/Slider";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
-import ProductCards from "../components/ProductCard";
+import ProductCard from "../components/ProductCard";
 
-export function Menu() {
+function Menu() {
 
-
+    const [category, setCategory] = useState("Dania");
+    
+    const updateCategoryfromSlider = (category) => {
+        setCategory(category);
+    }
 
     return (
         <div className="menu">
             <Header></Header>
             <div className="menu-outer">
                 <div className="menu-inner">
-                        <SearchBar></SearchBar>
-                        <div className="menu-slider-container">
-                            <Slider images={sliderImages}></Slider> 
-                        </div>
-                        <div className="card-container"> 
-                            <ProductCards></ProductCards>
-                            <ProductCards></ProductCards>
-                            <ProductCards></ProductCards>
-                            <ProductCards></ProductCards>
-                        </div>
+                    <SearchBar></SearchBar>
+                    <div className="menu-slider-container">
+                        <Slider updateCategory={updateCategoryfromSlider} ></Slider> 
+                    </div>
+                    <div className="card-container"> 
+                    {products[category].map((product =>
+                        <ProductCard key={product.id} product = {product}></ProductCard>
+                  
+                    ))}
+                    </div>
                 </div> 
             </div>
         </div>

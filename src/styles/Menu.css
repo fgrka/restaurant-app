@@ -30,5 +30,5 @@
 .card-container {
     display: grid;
     place-content: center;
-    gap: 2rem;
+    gap: 3.8rem;
 }

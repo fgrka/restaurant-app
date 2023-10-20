@@ -9,7 +9,7 @@ function Header(){
     const back = () => navigate("/Home");
     return(
     <div className="header">
-        <div class="header-container"> 
+        <div className="header-container"> 
             <div className="header-arrow"> 
                 <ReturnArrow page={back}></ReturnArrow>
             </div>
