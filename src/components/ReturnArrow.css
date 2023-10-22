@@ -1,13 +1,16 @@
 .return-arrow {
     display: block;
     width: 100%;
-    height: 1.7rem;
+    max-width: 30rem;
+    height: 1.8rem;
     cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
 }
   
   .return-arrow-img {
     display: block;
     text-align: left;
-    width: 1.7rem;
+    width: 2.8rem;
   } 
   

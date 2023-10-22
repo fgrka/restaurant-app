@@ -21,6 +21,10 @@
     height: 2rem;
     width: 100%;
 }
+
+.register-btn {
+    width: 90%;
+}
     
 
 .regiser-password-check > ul {

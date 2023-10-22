@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/Login.css";
 import ReturnArrow from "../components/ReturnArrow";
-import google from "../assets/facebookbw.png";
-import gmail from "../assets/googlebw.png";
+import google from "../assets/facebook.png";
+import gmail from "../assets/google.png";
+import apple from "../assets/apple.png"
 import LoginForm from "../components/LoginForm";
 
 function Login() {
@@ -19,9 +20,10 @@ function Login() {
         <LoginForm></LoginForm>
         <div className="login-info">
         <hr />
-            <img className="img-facebook" src={google} alt="google"/>
-            <img className="img-google" src={gmail} alt="gmail"/>
-            <p>Nie masz jeszcze konta? <Link to={register}>ZAREJESTRUJ SIĘ</Link></p>
+            <img className="login-icons" src={google} alt="google"/>
+            <img className="login-icons" src={gmail} alt="gmail"/>
+            <img className="login-icons" src={apple} alt="apple"/>
+            <p>Nie masz jeszcze konta? <br /> <Link to={register}><strong>ZAREJESTRUJ SIĘ</strong></Link></p>
         </div>
 
     </div>);

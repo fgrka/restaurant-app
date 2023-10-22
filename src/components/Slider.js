@@ -6,12 +6,16 @@ import images from "../components/SliderImg";
 function Slider(props) {
     const element = useRef(null);
     const [width, setWidth] = useState(0);
-    const { updateCategory } = props;
+    const [activeButton, setButtonActive] = useState(images[0]);
+    const activeColor = {backgroundColor:"var(--col-slider-item-active)"};
+    const defaultColor = {backgroundColor:"var(--col-slider-item-not-active)"};
 
-    function handleCategory(category) {
-        const chosenCategory = category;
-        updateCategory(chosenCategory);
+    function handleCategory(image, id) {
+        const chosenCategory = image[1];
+        props.updateCategory(chosenCategory)
+        setButtonActive(images[id]);
     }
+
 
     useLayoutEffect(() => {
         setWidth(element.current.offsetWidth);
@@ -22,10 +26,12 @@ function Slider(props) {
  return(
         <motion.div className="slider">
             <motion.div drag="x" dragConstraints={{ right: 0, left:constraintLeft}} className="slider-inner" ref={element}>
-                {images.map(image => {
+                {images.map((image, id) => {
+                    const isActive = activeButton === images[id];
+                    const backgroundColor = isActive ? activeColor : defaultColor;
                     return (
-                        <motion.div key ={image[1]} className="slider-img">
-                            <img src={image[0]} onClick={() => handleCategory(image[1])} alt="image" />
+                        <motion.div key = {image[1]} className="slider-img" style={backgroundColor}>
+                            <img src={image[0]} onClick = {() => {handleCategory(image, id)}} alt="image" />
                             <p className="item-txt">{image[1]} </p>
                         </motion.div>
                     );

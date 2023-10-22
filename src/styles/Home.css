@@ -8,6 +8,7 @@
 }
 
 .home-description {
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -38,6 +39,7 @@
     grid-template-columns: 1fr 1fr;
     max-width: 30rem;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home-btn-signin {
@@ -59,8 +61,6 @@
 
 
 .home-card-info-reg {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
 }
 
- 
-  

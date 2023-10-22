@@ -5,6 +5,7 @@ import Slider from "../components/Slider";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import ProductCard from "../components/ProductCard";
+import Banner from "../components/Banner";
 
 function Menu() {
 
@@ -19,8 +20,10 @@ function Menu() {
             <Header></Header>
             <div className="menu-outer">
                 <div className="menu-inner">
+                    <Banner></Banner>
                     <SearchBar></SearchBar>
                     <div className="menu-slider-container">
+                        <h4>Kategorie</h4>
                         <Slider updateCategory={updateCategoryfromSlider} ></Slider> 
                     </div>
                     <div className="card-container"> 

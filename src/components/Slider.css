@@ -2,13 +2,15 @@
 .slider-inner {
     display: flex;
     flex-direction: row;
+ 
     align-items:baseline;
     gap: 1.125rem;
     cursor: grab;
     height: 8rem;
+ 
     width: max-content;
     margin-bottom: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
 }
 
 .slider-img {
@@ -33,7 +35,7 @@
 
 .slider-img > img {
     transform: translateY(15px) translateX(1px);
-    height: 32px;
+    height: 30px;
     -webkit-user-drag: none; 
     /* background-color: var(--col-slider-item); */
 }
@@ -50,6 +52,7 @@
 
 @media screen and (min-width: 600px) {
     .slider-inner {
-       margin: 0 auto;
+       margin-left: auto;
+       margin-right: auto;
     }
 }

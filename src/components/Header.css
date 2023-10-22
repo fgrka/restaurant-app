@@ -5,8 +5,9 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 4rem;
-    background: white;
+    height: 5rem;
+    padding-bottom: 1rem;
+    background-color: var(--col-background);
     z-index: 999999;
 }
 
@@ -17,31 +18,50 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 30rem;
-
+    width: 100%;
+    max-width: 35rem;
 }
 
 .header-arrow {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 33%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
+    padding-top: 0.8rem;
+    width: 5rem;
+ 
 }
 
 .header-icons, .header-title {
     display: flex;
+    gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
-    width: 33%;
     margin-right: 1rem;
 }
+
+
+.header-title >h2 {
+    margin:0;
+}
  
+.icon-container {
+    display: block;
+    height: 2.85rem;
+    width: 2.85rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: var(--shadow-icon-header);
+    color: black;
+}
+
 .icon {
     display: block;
-    height: 2rem;
- 
+    text-align: center;
+    transform: translateY(30%) translateX(30%);
+    height: 1.8rem;
+}
+
+.fav {
+    height: 1.45rem;
+    transform: translateY(50%) translateX(40%);
 }

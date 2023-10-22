@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 import image from "../assets/plate.png";
-import google from "../assets/facebookbw.png";
-import gmail from "../assets/googlebw.png";
+import google from "../assets/facebook.png";
+import gmail from "../assets/google.png";
+import apple from "../assets/apple.png"
 
 function Home() {
     const navigate = useNavigate();
@@ -24,8 +25,9 @@ function Home() {
                 </div>
                 <div className="home-card-info">
                     <hr />
-                    <img className="img-facebook" src={google} alt="google"/>
-                    <img className="img-google" src={gmail} alt="gmail"/>
+                    <img className="login-icons" src={google} alt="google"/>
+                    <img className="login-icons" src={gmail} alt="gmail"/>
+                    <img className="login-icons" src={apple} alt="apple"/>
                     <p className="home-card-info-reg">Klikając "Zaloguj się" akceptujesz <a href="#">REGULAMIN</a></p>
                 </div>
             </div>

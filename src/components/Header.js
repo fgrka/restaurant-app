@@ -3,6 +3,7 @@ import ReturnArrow from "../components/ReturnArrow"
 import { useNavigate } from "react-router-dom";
 import trolley from "../assets/trolley.png";
 import user from "../assets/user.png";
+import favourite from "../assets/favourite.png"
 
 function Header(){
     const navigate = useNavigate();
@@ -14,11 +15,18 @@ function Header(){
                 <ReturnArrow page={back}></ReturnArrow>
             </div>
             <div className="header-title">
-                <h2>Menu</h2>
+            
             </div> 
             <div className="header-icons">
-                <img className="icon" src={trolley} />
-                <img className="icon" src={user} />
+            <div className="icon-container">
+                    <img className="icon fav" src={favourite} />
+                </div>
+                <div className="icon-container">
+                   <img className="icon user" src={user} />
+                </div>
+                <div className="icon-container">
+                    <img className="icon trolley" src={trolley} />
+                </div>
             </div>
         </div>
     </div>

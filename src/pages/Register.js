@@ -16,7 +16,7 @@ function Register() {
         </div>
         <RegisterForm></RegisterForm>
         <div className="register-info">
-            <p>Masz już konto? <Link to={login}>ZALOGUJ SIĘ</Link></p>
+            <p>Masz już konto? <br /> <Link to={login}><strong>ZALOGUJ SIĘ</strong></Link></p>
         </div>
     </div>
     )

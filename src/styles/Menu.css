@@ -2,17 +2,17 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     height: max-content;
     padding-bottom: 2rem;
+ 
 }
 
 .menu-outer {
     margin-top: 3rem;
-    padding-top: 2rem;
-   
-    background-color: white;
-
+    padding-top: 3rem;
 }
 
 .menu-inner {
@@ -31,4 +31,10 @@
     display: grid;
     place-content: center;
     gap: 3.8rem;
+}
+
+.menu-slider-container {
+    width: 90vw;
+    max-width: 20rem;
+    padding: 0 1rem;
 }

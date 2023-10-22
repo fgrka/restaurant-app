@@ -1,0 +1,31 @@
+.banner {
+    display: block;
+    position: relative;
+    width: 90vw;
+    max-width: 30rem;
+    margin: 0 auto 1.75rem auto; 
+
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 1.875rem;
+
+}
+
+.banner-info {
+    position: absolute;
+    color: white;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 999;
+}
+
+.banner-info >h4,  .banner-info >h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.banner-price {
+    margin: 0;
+}

@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 
@@ -20,5 +19,23 @@
     height: 2rem;
     width: 100%;
 }
-     
 
+.login-btn {
+    width: 90%;
+}
+     
+.login-password-reminder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.login-password-reminder> p {
+    color: var(--col-button-filled);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+ 

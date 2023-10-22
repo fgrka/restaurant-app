@@ -89,7 +89,7 @@ function RegisterForm() {
                 </ul>
             </div>    
             <div className="register-btn-container">
-                <button className="button-filled" onClick={Register}>Utwórz konto</button>
+                <button className="button-filled register-btn" onClick={Register}>Utwórz konto</button>
             </div>
         </div>
     );

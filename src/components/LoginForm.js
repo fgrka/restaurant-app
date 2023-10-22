@@ -52,8 +52,11 @@ function LoginForm() {
                     <ErrorInfo errorMessage={errorMessage}></ErrorInfo>
             </div>
             <div className="login-btn-container">
-                <button className="button-filled" onClick={Login}>Zaloguj się</button>
+                <button className="button-filled login-btn" onClick={Login}>Zaloguj się</button>
             </div>
+            <div className="login-password-reminder">
+                    <p>Nie pamiętasz hasła?</p>
+                </div>
         </div>
     )
 }
