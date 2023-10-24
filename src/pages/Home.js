@@ -3,7 +3,8 @@ import "../styles/Home.css";
 import image from "../assets/plate.png";
 import google from "../assets/facebook.png";
 import gmail from "../assets/google.png";
-import apple from "../assets/apple.png"
+import apple from "../assets/apple.png";
+import PageTransition from "../components/PageTransition";
 
 function Home() {
     const navigate = useNavigate();
@@ -12,6 +13,7 @@ function Home() {
     const menu = () => navigate("/Menu");
     
     return(
+        <PageTransition>
         <div className="home">
             <div className="home-description"> <strong>Zaloguj się</strong>, aby otrzymywać personalizowane promocje, <br></br> lub <strong>kontynuuj bez logowania</strong> </div>
             <div className="home-logo-container">
@@ -32,6 +34,7 @@ function Home() {
                 </div>
             </div>
         </div>
+        </PageTransition>
     );
 }
 

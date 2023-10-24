@@ -3,11 +3,12 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
     height: 100dvh;
+    margin: 0 2rem;
 }
 
 .login-title {
+    margin-top: 2rem;
     text-align: center;
 }
 

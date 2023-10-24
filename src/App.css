@@ -124,7 +124,7 @@ input {
   box-shadow: var(--shadow-item);
   border: none;
   font-size: 0.875rem;
-  width: calc(90%);
+  width: 100%;
   color: var(--col-lightgray);
   letter-spacing: 0.06rem;
   user-select: all;
