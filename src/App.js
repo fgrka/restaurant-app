@@ -5,7 +5,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Menu from './pages/Menu';
 import './App.css';
-import { AnimatePresence } from "framer-motion";
+
 
 const router = createBrowserRouter([
   { path: "/", element: <Welcome/>},
@@ -20,10 +20,8 @@ const router = createBrowserRouter([
 function App() {
 
   return (
-  <AnimatePresence>
-    <RouterProvider router={router}/>;
-  </AnimatePresence>
   
+    <RouterProvider router={router}/>
   )
 }
 

@@ -29,12 +29,10 @@
  
 .card-container {
     display: grid;
-    place-content: center;
     gap: 3.8rem;
 }
 
 .menu-slider-container {
     width: 90vw;
     max-width: 20rem;
-    padding: 0 1rem;
 }

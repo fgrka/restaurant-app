@@ -1,20 +1,28 @@
 import "../styles/Menu.css"
 import { useState } from "react";
-import { products } from "../products";
 import Slider from "../components/Slider";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
-import ProductCard from "../components/ProductCard";
 import Banner from "../components/Banner";
 import PageTransition from "../components/PageTransition";
+import MenuProductsContainer from "../components/MenuProductsContainer";
 
 function Menu() {
 
     const [category, setCategory] = useState("Dania");
+    const [products, setProducts] = useState([]);
+    const [cleanResults, setCleanResults] = useState(false);
     
     const updateCategoryfromSlider = (category) => {
         setCategory(category);
+        setCleanResults(true)
     }
+
+    const productsToShow = (products) => {
+        setProducts(products);
+        setCleanResults(false)
+    }
+
 
     return (
         <PageTransition>
@@ -23,19 +31,15 @@ function Menu() {
                 <div className="menu-outer">
                     <div className="menu-inner">
                         <Banner></Banner>
-                        <SearchBar></SearchBar>
+                        <SearchBar foundProducts={productsToShow}></SearchBar>
                         <div className="menu-slider-container">
                             <h4>Kategorie</h4>
-                            <Slider updateCategory={updateCategoryfromSlider} ></Slider> 
-                        </div>
-                        <div className="card-container" > 
-                        {products[category].map(((product, delayTime) =>
-                            <ProductCard key={product.id} product = {product} delay = {delayTime/3} ></ProductCard>
-                        
-                        ))}
-                        </div>
+                        <Slider updateCategory={updateCategoryfromSlider} ></Slider> 
+                        <MenuProductsContainer chosenCategory={category} foundProducts={products} cleanResults={cleanResults}>
+                        </MenuProductsContainer>
                     </div> 
                 </div>
+            </div>
             </div>
         </PageTransition>
     );

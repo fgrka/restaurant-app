@@ -1,5 +1,6 @@
 .card {
     display: block;
+    box-sizing: border-box;
     position: relative;
     background-color: white;
     width: 90vw;

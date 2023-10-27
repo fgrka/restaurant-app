@@ -1,20 +1,17 @@
 import { useEffect } from "react";
+import { useAnimate } from "framer-motion";
 import "./ProductCard.css";
-// import mealImg from props.product.image;
-import { motion, useAnimate } from "framer-motion";
 
 function ProductCard(props){
-const [scope, animate] = useAnimate();
+    const [scope, animate] = useAnimate();
 
-useEffect(()=> {
-    const handleAnimation = async() => {
-        await animate(scope.current, {opacity:0}, {delay:0.2}, {duration: 0});
-        await animate(scope.current, { opacity:1 }, { duration:1});
-    }
-    handleAnimation();
-});
-
-
+    useEffect( () => {
+        const setAnimation = async() => {
+        await animate(scope.current, {opacity:0});
+        await animate(scope.current, {opacity:1}, {delay: props.delay})
+        }; 
+        setAnimation();
+    }) 
 
     return(
         <div ref={scope} style={{opacity: 0}} className="card">

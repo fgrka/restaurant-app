@@ -156,6 +156,6 @@ const products = {
 };
 
 
-const allProducts = Object.values(products).flat;
+const allProducts = Object.values(products).flat();
 
-export { products };
+export { products, allProducts };
